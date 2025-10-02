@@ -151,8 +151,8 @@ Each sample includes 11 physicochemical variables (e.g., acidity, sugar, pH) and
 
 🛠️ **Tech Stack:**
 
-Python 3.8+
-Flask / FastAPI
-Scikit-learn, Pandas, NumPy
-Docker
-GitHub Actions
+        Python 3.8+
+        Flask / FastAPI
+        Scikit-learn, Pandas, NumPy
+        Docker
+        GitHub Actions
