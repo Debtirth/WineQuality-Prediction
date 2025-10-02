@@ -1,0 +1,10 @@
+venv/
+.git
+.gitignore
+README.md
+Dockerfile
+.dockerignore
+.github/
+logs/
+artifacts/
+research/

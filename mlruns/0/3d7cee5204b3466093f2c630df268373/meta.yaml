@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/debti/Desktop/Progs/project/wine-quality-prediction/mlruns/0/3d7cee5204b3466093f2c630df268373/artifacts
+end_time: 1759345419009
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d7cee5204b3466093f2c630df268373
+run_name: unleashed-crab-77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759345410890
+status: 3
+tags: []
+user_id: debti

@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/debti/Desktop/Progs/project/wine-quality-prediction/mlruns/0/models/m-2c0bc3884a844125928317daaecc23af/artifacts
+creation_timestamp: 1759345411083
+experiment_id: '0'
+last_updated_timestamp: 1759345419002
+model_id: m-2c0bc3884a844125928317daaecc23af
+model_type: null
+name: model
+source_run_id: 3d7cee5204b3466093f2c630df268373
+status: 2
+status_message: null
