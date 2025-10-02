@@ -20,18 +20,65 @@ Ready for containerized deployment.
 📂 **Project Structure**
 
 wine-quality-prediction/
-│── app.py                 # Web app for model inference
-│── main.py                # Entry point to run full pipeline
-│── requirements.txt       # Python dependencies
-│── setup.py               # Install project as package
-│── params.yaml            # ML model hyperparameters
-│── schema.yaml            # Data validation schema
-│── config/config.yaml     # Pipeline configuration
-│── artifacts/             # Generated artifacts (data, models, metrics)
-│── .github/workflows/     # CI/CD pipeline
-│── Dockerfile             # Docker container setup
-│── template.py            # Script to generate template structure
-│── Data/                  # Raw dataset (winequality-red.csv)
+│
+├── .github/
+│   └── workflows/
+│       └── main.yaml                # CI/CD Pipeline
+│
+├── src/
+│   └── mlproject/
+│       ├── _init_.py
+│       ├── components/
+│       │   ├── _init_.py
+│       │   ├── data_ingestion.py
+│       │   ├── data_validation.py
+│       │   ├── data_transformation.py
+│       │   ├── model_trainer.py
+│       │   └── model_evaluation.py
+│       ├── utils/
+│       │   ├── _init_.py
+│       │   ├── common.py
+│       │   └── logger.py
+│       ├── config/
+│       │   ├── _init_.py
+│       │   └── configuration.py
+│       ├── pipeline/
+│       │   ├── _init_.py
+│       │   ├── stage_01_data_ingestion.py
+│       │   ├── stage_02_data_validation.py
+│       │   ├── stage_03_data_transformation.py
+│       │   ├── stage_04_model_trainer.py
+│       │   ├── stage_05_model_evaluation.py
+│       │   └── predict.py
+│       ├── entity/
+│       │   ├── _init_.py
+│       │   └── config_entity.py
+│       └── constants/
+│           └── _init_.py
+│
+├── config/
+│   └── config.yaml
+│
+├── schema.yaml
+├── params.yaml
+├── requirements.txt
+├── setup.py
+├── main.py
+├── app.py
+├── Dockerfile
+├── .dockerignore
+├── research/
+│   └── experiments.ipynb
+├── templates/
+│   ├── index.html
+│   └── results.html
+└── artifacts/
+    ├── data_ingestion/
+    ├── data_validation/
+    ├── data_transformation/
+    ├── model_trainer/
+    └── model_evaluation/
+"""
 
 
 
