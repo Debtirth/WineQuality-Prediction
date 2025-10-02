@@ -85,18 +85,22 @@ Ready for containerized deployment.
 ⚙️ **Installation & Setup**
 
 1️⃣ **Clone the Repository**
+
 git clone https://github.com/your-username/wine-quality-prediction.git
 cd wine-quality-prediction
 
 2️⃣ **Create Virtual Environment**
+
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 
 3️⃣ **Install Dependencies**
+
 pip install -r requirements.txt
 
 4️⃣ **Run the Pipeline**
+
 python main.py
 
 
@@ -114,20 +118,24 @@ Training Data: Data/winequality-red.csv
     Model Evaluation
 
 **Results are stored in the artifacts/ folder:**
+
 Trained model → artifacts/model_trainer/model.joblib
 Evaluation metrics → metrics.json
 
 
 
 🌐 **Run the Web App**
+
 After training, launch the API:
 python app.py
 
 🐳 **Run with Docker**
+
 docker build -t wine-quality .
 docker run -p 5000:5000 wine-quality
 
 🔄 **CI/CD**
+
 GitHub Actions workflow (.github/workflows/main.yaml) automates:
 
     Linting & Testing
@@ -136,6 +144,7 @@ GitHub Actions workflow (.github/workflows/main.yaml) automates:
 
 
 📊 **Dataset**
+
 The dataset is based on red wine quality from the UCI Machine Learning Repository
 Each sample includes 11 physicochemical variables (e.g., acidity, sugar, pH) and a quality score (0–10).
 
