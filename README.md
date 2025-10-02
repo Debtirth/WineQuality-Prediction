@@ -18,6 +18,7 @@ Ready for containerized deployment.
 
 
 📂 **Project Structure**
+
 wine-quality-prediction/
 │── app.py                 # Web app for model inference
 │── main.py                # Entry point to run full pipeline
